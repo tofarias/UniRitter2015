@@ -11,7 +11,7 @@ namespace UniRitter.UniRitter2015.Controllers
     {
         private readonly IRepository<PersonModel> _repo;
 
-        public PeopleController(IRepository<PersonModel> repo)
+        public PeopleController(IRepository<PersonModel> repo) : base (repo)
         {
             _repo = repo;
         }
